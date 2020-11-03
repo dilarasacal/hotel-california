@@ -1,0 +1,246 @@
+:root {
+    --bg-size: 992px;
+    --md-size: 768px;
+    --button-background: #FEE7D3;
+    --button2-background: #A1ADBC;
+    --button2-bottom-border: #25415F;
+    --nav-background: #424242;
+    --theme-color: #1D9D9C;
+    --about-background: #DBF2FF;
+    --contacts-background: #1FA2F5;
+    --activity-background: #C188B9;
+    --how-activity-background: #F5F5F5;
+    --how-activity-border: #DFE8EC;
+    --comments-background: #FFEECB;
+    --activity-footer-background: #EB9DC5;
+    --activity-footer-border: #D593BF;
+    --white: #fff;
+    --color-facebook: #3b5998;
+    --color-twitter: #1DA1F2;
+    --color-instagram: #833AB4;
+    --color-youtube: #FF0000;
+
+}
+
+::selection {
+    background: var(--nav-background);
+    color: var(--theme-color);
+}
+
+.hr-tag {
+    height: 5px;
+    width: 50px;
+    background-color: var(--nav-background);
+    margin: 30px auto;
+}
+
+/* header  start */
+
+#mainNav {
+    background-color: var(--theme-color) !important;
+}
+
+#mainNav .navbar-toggler {
+    background-color: var(--nav-background);
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+}
+
+.masthead-text {
+    margin: auto;
+}
+
+@media (min-width: 992px) {
+    #mainNav .navbar-brand img {
+        height: 7rem;
+    }
+
+    .masthead-text {
+        font-size: 24px;
+        max-width: var(--md-size);
+    }
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--white);
+    background: var(--nav-background);
+    border-radius: 5px;
+}
+
+
+header.masthead {
+    background-image: url('../assets/images/header-background.png');
+}
+
+.btn-info {
+    background-color: var(--button-background);
+    padding: 10px;
+    margin: 10px;
+    color: var(--nav-background);
+}
+
+/* header end */
+
+/* about start */
+#about {
+    background-color: var(--about-background);
+}
+
+/* about end */
+
+/* activity start */
+#activity {
+    background-color: var(--activity-background);
+    padding-bottom: 0;
+}
+
+.activity-card {
+    text-align: center;
+}
+
+.activity-text {
+    max-width: 600px;
+    margin: auto;
+}
+
+.activity-image {
+    border-radius: 50%;
+    border: 6px solid var(--white);
+}
+
+.activity-title {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.activity-description {
+    text-align: center;
+}
+
+.activity-footer {
+    background-color: var(--activity-footer-background);
+    border-top: 10px solid var(--activity-footer-border);
+    border-left: 10px solid var(--activity-footer-border);
+    padding: 10px;
+    width: 66.67%;
+    margin-left: 33.33%;
+}
+
+/* activity end */
+
+/* howActivity start */
+#howActivity {
+    background-color: var(--how-activity-background);
+}
+
+.how-activity-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.how-activity-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    margin: 10px auto;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    font-weight: 300;
+    font-size: 28px;
+    border: 5px solid var(--how-activity-border);
+}
+
+.c100 {
+    margin: 20px auto;
+}
+
+/* howActivity end */
+
+/* comments start */
+#comments {
+    background-color: var(--comments-background);
+}
+
+.comment-wrapper {
+    margin: 15px auto;
+    max-width: 350px;
+    display: flex;
+}
+
+.employee-img {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+}
+
+.comment-text {
+    font-size: 12px;
+}
+
+.employee-name {
+    font-size: 14px;
+}
+
+/* comments end */
+
+/* contacts start */
+#contacts {
+    background-color: var(--contacts-background);
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.submit-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.btn-form-submit {
+    width: 100%;
+    background-color: var(--button2-background);
+    border-bottom: 2px solid var(--button2-bottom-border);
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+}
+
+/* contacts end */
+
+/* footer start */
+footer {
+    background-color: var(--about-background);
+}
+
+.footer-icons svg {
+    margin: 5px;
+    font-size: 25px;
+}
+
+.fa-facebook {
+    color: var(--color-facebook)
+}
+
+.fa-twitter {
+    color: var(--color-twitter);
+}
+
+.fa-instagram {
+    color: var(--color-instagram)
+}
+
+.fa-youtube {
+    color: var(--color-youtube);
+}
+
+/* footer end */
